@@ -11,6 +11,7 @@ module EyesupplyFirstCustomer
   class Application < Rails::Application
     require 'ext/string'
     require 'ext/colorize'
+    require 'json'
 
     config.active_record.raise_in_transactional_callbacks = true
 

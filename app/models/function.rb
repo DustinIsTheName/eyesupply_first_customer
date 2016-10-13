@@ -3,9 +3,9 @@ class Function < ActiveRecord::Base
 	CYCLE = 0.5
 	@start_time = Time.now
 
-	def self.puts_hello
-		puts ShopifyAPI::Base.site
-		puts ShopifyAPI::Customer.find( :all, :params => { :limit => 1 } )
+	def self.say_hello
+		print Colorize.magenta('ENV["SHARED_SECRET"]: ')
+		puts Colorize.cyan(ENV["SHARED_SECRET"])
 	end
 
 	def self.how_long_a_nap

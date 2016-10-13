@@ -12,6 +12,8 @@ module EyesupplyFirstCustomer
     require 'ext/string'
     require 'ext/colorize'
     require 'json'
+    require 'openssl'
+    require 'base64'
 
     config.active_record.raise_in_transactional_callbacks = true
 
